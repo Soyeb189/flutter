@@ -1,5 +1,4 @@
-package com.soyeb.flutter;
-
+package com.soyeb.flutter.foundTransfer;
 
 import java.util.List;
 
@@ -7,22 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
 @Service
 @Transactional
-public class MenuService {
+public class FoundService {
 	@Autowired
-	private MenuRepository repo;
+	private FoundRepository repo;
 	
-	
-	public List<Menu> findAllMenu(){
+	public List<FoundMenu> findAllFoundMenu(){
 		return repo.findAll();
 	}
 	
-	public void save(Menu menu) {
+	public void saveFoundMenu(FoundMenu menu) {
 		repo.save(menu);
 	}
-	
-	
 
 }

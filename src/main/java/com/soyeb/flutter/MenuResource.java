@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class MenuResource {
 	@Autowired
@@ -30,5 +31,7 @@ public class MenuResource {
 	    map.put("Code", "1");
 	    return map;
 	}
+	
+
 
 }

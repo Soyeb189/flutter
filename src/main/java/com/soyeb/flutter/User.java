@@ -17,6 +17,10 @@ public class User {
 	private String image;
 	private String uuid;
 	private int checeked_value;
+	private String dob;
+	private String gender;
+	private String parmanentAddress;
+	private String presentAddress;
 	
 	public User() {
 		
@@ -24,8 +28,10 @@ public class User {
 	
 	
 
+
+
 	public User(int id, String name, String email, String phone, String password, String image, String uuid,
-			int checeked_value) {
+			int checeked_value, String dob, String gender, String parmanentAddress, String presentAddress) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -35,6 +41,10 @@ public class User {
 		this.image = image;
 		this.uuid = uuid;
 		this.checeked_value = checeked_value;
+		this.dob = dob;
+		this.gender = gender;
+		this.parmanentAddress = parmanentAddress;
+		this.presentAddress = presentAddress;
 	}
 
 
@@ -102,6 +112,55 @@ public class User {
 	public void setCheceked_value(int checeked_value) {
 		this.checeked_value = checeked_value;
 	}
+
+
+
+	public String getDob() {
+		return dob;
+	}
+
+
+
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+
+
+
+	public String getGender() {
+		return gender;
+	}
+
+
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+
+	public String getParmanentAddress() {
+		return parmanentAddress;
+	}
+
+
+
+	public void setParmanentAddress(String parmanentAddress) {
+		this.parmanentAddress = parmanentAddress;
+	}
+
+
+
+	public String getPresentAddress() {
+		return presentAddress;
+	}
+
+
+
+	public void setPresentAddress(String presentAddress) {
+		this.presentAddress = presentAddress;
+	}
+	
 	
 	
 
